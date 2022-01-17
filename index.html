@@ -10,25 +10,89 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/Style.css">
 </head>
+<style>
+    .navbar-header {
+        position: relative;
+        width: auto;
+        height: 25%;
+        background-color: lightblue;
+        text-align: left;
+        font-weight: bolder;
+        font-size: x-large;
+        border: 1px solid black;
+        padding: 1px;
+        padding-bottom: 5px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    #navbar-collapse-1 {
+        position: relative;
+        text-align: center;
+        background-color: rgb(243, 180, 180);
+        font-weight: bold;
+        border: 1px solid black;
+        visibility: visible-xs;
+    }
+    
+    #items {
+        width: 50vw;
+        height: 250px;
+        padding-bottom: 20px;
+        position: relative;
+        border: 3px solid black;
+        padding: 1px;
+        margin-bottom: 5px;
+        clear: both;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    span {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: x-large;
+    }
+    
+    p1 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: x-large;
+        margin-left: 120px;
+    }
+    
+    p {
+        position: absolute;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+        margin-top: 50px;
+    }
+</style>
 
 <body>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
-    <nav class="navbar navbar-default">
+    <div class="navbar navbar-default nav-show" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-                <a class="navbar-brand" href="#">Food,LLC</a>
+                <div class="navbar-brand" class="pull left visible-md visible-lg">Food,LLC</div>
             </div>
             <div id="navbar-collapse-1" class="collapse navbar-collapse">
-                <di class="container-fluid">
+                <div class="container-fluid">
                     <ul id="nav-list" class="nav navbar-nav navbar-right">
                         <li>
                             <a href="menu-categories.html">
@@ -43,34 +107,34 @@
                                 <span class="item 3"></span><br class="visible-xs"> Sushi</a>
                         </li>
                     </ul>
+                </div>
             </div>
-        </div>
-        <div id="main-content" class="container-fluid">
-            <h1> Our Menu </h1>
-            <div id="home-tiles" class="row">
-                <div class="col-xs-12">
-                    <div id="items">
-                        <p1>Chicken</p1>
-                        <p>Fried chicken, also known as Southern fried chicken is a dish consisting of chicken pieces that have been coated with seasoned flour or batter and pan-fried, deep fried, pressure fried, or air fried. </p>
-                    </div>
+            <div id="main-content" class="container-fluid">
+                <h1> Our Menu </h1>
+                <div id="home-tiles" class="row">
+                    <div class="col-xs-12">
+                        <div id="items">
+                            <p1 class="text-center">Chicken</p1>
+                            <p>Fried chicken, also known as Southern fried chicken is a dish consisting of chicken pieces that have been coated with seasoned flour or batter and pan-fried, deep fried, pressure fried, or air fried. </p>
+                        </div>
 
-                </div>
-                <div class="col-xs-12">
-                    <div id="items">
-                        <p1>Beef</p1>
-                        <p>Beef Fried Rice recipe includes tender strips of sirloin, vegetables, eggs, crisp rice, and a rich, full-flavored sauce.</p>
                     </div>
-                </div>
-                <div class="col-xs-12">
-                    <div id="items">
-                        <p1>Sushi</p1>
-                        <p>Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients, such as seafood, often raw, and vegetables. </p>
+                    <div class="col-xs-12">
+                        <div id="items">
+                            <p1 class="text-center">Beef</p1>
+                            <p>Beef Fried Rice recipe includes tender strips of sirloin, vegetables, eggs, crisp rice, and a rich, full-flavored sauce.</p>
+                        </div>
                     </div>
+                    <div class="col-xs-12">
+                        <div id="items">
+                            <p1 class="text-center">Sushi</p1>
+                            <p>Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients, such as seafood, often raw, and vegetables. </p>
+                        </div>
 
+                    </div>
+                    </a>
                 </div>
-                </a>
             </div>
-        </div>
 
         </div>
 
